@@ -1,0 +1,54 @@
+
+{% extends "alimentos/base.html" %}
+
+{% block tittle %} menu {% endblock %}
+
+{% block content  %}
+{% load static %}
+<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<div class="col s6 ">
+					<h3>tortuga acuatica</h3>
+					<br>
+					<img src="{% static 'imagenes/tortuga_zoomad.jpg' %}" height="480" width="360">
+					<br>
+					<h4>ZOOMED</h4>
+				</div>
+				<div class="col s6 ">
+					<h3>Tortuga acuatica</h3>
+					<br>
+					<img src="{% static 'imagenes/Tortuga_LCMAS.jpg' %}" height="480" width="360">
+					<br>
+					<h4>Lomas</h4>
+				</div>
+				<div class="col s6 ">
+					<h3>Tortuga Acuatica</h3>
+					<br>
+					<img src="{% static 'imagenes/Tortuga_Marina.jpg' %}" height="480" width="360">
+					<br>
+					<h4>Mazuri</h4>
+				</div>
+				<div class="col s6 ">
+					<h3>Tortuga Terrestre</h3>
+					<br>
+					<img src="{% static 'imagenes/Tortuga_mazuri.webp' %}" height="480" width="360">
+					<br>
+					<h4>Mazuri</h4>
+				</div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+{% endblock%}
+
+{% block javascript %}
+
+
+{% endblock %}

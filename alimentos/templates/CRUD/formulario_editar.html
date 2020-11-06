@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario editar</title>
+</head>
+<body>
+    <h1>editar datos </h1>
+    <br><br>
+    <form action="actualizar_persona" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="id_persona" value="{{persona.id_persona}}">
+        <label>Rut      :</label><input type="text" name="rut" value="{{persona.rut}}"><br>
+        <label>Nombre   :</label><input type="text" name="nombre" value="{{persona.nombre}}"><br>
+        <label>Apellido:</label><input type="text" name="apellidos" value="{{persona.apellidos}}"><br>
+        <label>Email:</label><input type="email" name="email" value="{{persona.email}}"><br>
+        <label>direccion:</label><input type="text" name="direccion" value="{{persona.direccion}}"><br>
+        <label>Cargo:</label><input type="text" name="cargo" value="{{persona.cargo}}"><br>
+
+        <label>Comuna:</label>
+        <select name="comuna">
+             <option value="Seleccionar" selected>Seleccionar</option>
+             <option value="san bernardo">San Bernardo</option>
+             <option value="la granga">La Granja</option>
+             <option value="el bosque">El Bosque</option>
+             <option value="la pintana">La Pintana</option>
+             <option value="puente alto">Puente Alto</option>
+             <option value="maipu">Maipu</option>
+             <option value="lo espejo">Lo Espejo</option>
+         </select>
+        <br>
+        <label>Telefono:</label><input type="text" name="telefono" value="{{persona.telefono}}"><br>
+
+        <label>Tipo:</label>
+        <select name="tipo">
+            <option value="Seleccionar" selected>Seleccionar</option>
+            <option value="usuario">Usuario</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br>
+        <input type="submit" name="opcion" value="actualizar">
+    </form>
+</body>
+</html>

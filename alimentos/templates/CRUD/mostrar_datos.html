@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mostrar datos </title>
+</head>
+<body>
+    <h1> Listado de personas </h1>
+    <br><br>
+    la cantidad de personas es : {{personas|length}}
+    <br>
+    <br>
+    {%for persona in personas%}
+
+    {{persona}}
+    <br>
+    {%endfor%}
+
+</body>
+</html>

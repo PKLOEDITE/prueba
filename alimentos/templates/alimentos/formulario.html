@@ -1,0 +1,52 @@
+{% extends "alimentos/base.html" %}
+
+{% block tittle %} menu {% endblock %}
+
+{% block content  %}
+{% load static %}
+<h1>Agregar personas</h1>
+    <br><br>
+   <form action="agregar_persona" method="POST">
+        {% csrf_token %}
+       <div class="container">
+		<div class="row">
+			<div class="col s12">
+
+				<div class="col s6 ">
+                    <label>Rut      :</label><input type="text" name="rut"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>Nombre   :</label><input type="text" name="nombre"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>Apellido:</label><input type="text" name="apellidos"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>Email:</label><input type="email" name="email"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>direccion:</label><input type="text" name="direccion"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>Comuna:</label><input type="text" name="Comuna"><br>
+                </div>
+                <div class="col s6 ">
+                    <label>Telefono:</label><input type="text" name="telefono"><br>
+                </div>
+
+
+
+                <input type="hidden" name="cargo" value="cliente">
+                <input type="hidden" name="tipo" value="cliente">
+                <br>
+                <input type="submit" name="opcion" value="Grabar">
+            </div>
+        </div>
+       </div>
+   </form>
+{% endblock%}
+
+{% block javascript %}
+
+
+{% endblock %}

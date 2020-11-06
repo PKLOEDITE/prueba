@@ -1,0 +1,54 @@
+{% extends "alimentos/base.html" %}
+
+{% block tittle %} menu {% endblock %}
+
+{% block content  %}
+{% load static %}
+<div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="titulo"> Lo mejor para tu amigo </h1>
+
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">Perros</h2>
+
+                        <img src="{%static 'imagenes/Perro_cachorro_cahampion.jpg' %}" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">Gatos</h2>
+
+                        <img src="{%static 'imagenes/Gato_adulto_purina.webp' %}" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">Tortugas</h2>
+
+                        <img src="{%static 'imagenes/Tortuga_LCMAS.jpg' %}" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">Hamster</h2>
+
+                        <img src="{%static 'imagenes/Hamster_champion.jfif' %}" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">Pajaros</h2>
+
+                        <img src="{%static 'imagenes/aves_exoticas.jpeg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+{% endblock%}
+
+{% block javascript %}
+
+
+{% endblock %}

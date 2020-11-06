@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Agregar Persona</title>
+</head>
+<body>
+    <h1>Agregar Personas</h1>
+    <br><br>
+    <form action="agregar_persona" method="POST">
+        {% csrf_token %}
+        <label>Rut      :</label><input type="text" name="rut"><br>
+        <label>Nombre   :</label><input type="text" name="nombre"><br>
+        <label>Apellido:</label><input type="text" name="apellidos"><br>
+        <label>Email:</label><input type="email" name="email"><br>
+        <label>direccion:</label><input type="text" name="direccion"><br>
+        <label>cargo:</label>
+        <select name="cargo">
+             <option value="usuario" selected>usuario</option>
+         </select>
+        <label>Comuna:</label>
+        <select name="comuna">
+             <option value="Seleccionar" selected>Seleccionar</option>
+             <option value="san bernardo">San Bernardo</option>
+             <option value="la granga">La Granja</option>
+             <option value="el bosque">El Bosque</option>
+             <option value="la pintana">La Pintana</option>
+             <option value="puente alto">Puente Alto</option>
+             <option value="maipu">Maipu</option>
+             <option value="lo espejo">Lo Espejo</option>
+         </select>
+        <br>
+        <label>Telefono:</label><input type="text" name="telefono"><br>
+
+        <label>Tipo:</label>
+        <select name="tipo">
+            <option value="usuario" selected>Usuario</option>
+        </select>
+        <br>
+        <input type="submit" name="opcion" value="Grabar">
+    </form>
+</body>
+</html>

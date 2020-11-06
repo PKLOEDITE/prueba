@@ -1,0 +1,50 @@
+{% extends "alimentos/base.html" %}
+
+{% block tittle %} menu {% endblock %}
+
+{% block content  %}
+{% load static %}
+<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<!-- PRoductos los cuales se mmuestran en la pagina-->
+				<div class="col s6 ">
+					<h3>Aves Silvestres</h3>
+					<br>
+					<img src="{%static 'imagenes/Alimento_aves.jpg' %}" height="480" width="360">
+					<br>
+					<h4>Anasac</h4>
+				</div>
+
+				<div class="col s6 ">
+					<h3>Aves Exoticas</h3>
+					<br>
+					<img src="{%static 'imagenes/aves_exoticas.jpeg' %}" height="480" width="360">
+					<br>
+					<h4>Pio-Pa</h4>
+				</div>
+
+				<div class="col s6 ">
+					<center>
+						<h3>Aves Silvestres </h3>
+						<h3>y de Hogar</h3>
+						<br>
+						<img src="{%static 'imagenes/aves_silvestres.jpg' %}" height="480" width="360">
+						<br>
+						<h4>REdKite</h4>
+					</center>
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+{% endblock%}
+
+{% block javascript %}
+
+
+{% endblock %}

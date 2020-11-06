@@ -1,0 +1,48 @@
+header{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+label{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    text-align:center;
+}
+#cont{
+    color: white;
+    text-align: center;
+   
+
+}
+header{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #36221c #e3ddd9 35%, 65%);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+footer{
+    color: white;
+    font-size: 30px;
+
+}
+a{
+    align-items: center;
+}
